@@ -91,7 +91,7 @@ DATABASES = {
         'NAME': 'FoodZone',
         'USER': 'prit',
         'PASSWORD': 'prit@2004',
-        'HOST': 'localhost',
+        'HOST': '127.0.0.1',
         'PORT': '5432',
     }
 }

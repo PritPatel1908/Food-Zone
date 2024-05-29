@@ -1,4 +1,4 @@
 #!/bin/bash
 
 # Collect static files
-python manage.py collectstatic
+python -m manage.py collectstatic

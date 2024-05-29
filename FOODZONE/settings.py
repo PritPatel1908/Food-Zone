@@ -87,25 +87,17 @@ WSGI_APPLICATION = 'FOODZONE.wsgi.application'
 # postgresql database
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'FoodZone',
-        'USER': 'prit',
-        'PASSWORD': 'prit@2004',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'food_zone',
+        'USER': 'root',
+        'PASSWORD': '',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
+        'OPTIONS': {
+            'sql_mode': 'STRICT_ALL_TABLES'
+        }
     }
 }
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'URL': os.getenv('POSTGRES_URL'),
-#         'NAME': os.getenv('PGNAME'),
-#         'USER': os.getenv('PGUSER'),
-#         'PASSWORD': os.getenv('POSTGRES_PASSWORD'),
-#         'HOST': os.getenv('PGHOST'),
-#         'PORT': os.getenv('PGPORT'),
-#     }
-# }
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators

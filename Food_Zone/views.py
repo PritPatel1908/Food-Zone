@@ -11,30 +11,29 @@ from django.contrib import messages
 
 # Create your views here.
 def index(request):
-    # if request.user.is_authenticated:
-    #     if request.user.user_type == 1:
-    #         return render(request, 'Admin/Home Profile/index.html')
-    #     else:
-    #         check_account = request.session.get('vendor_account')
-    #         if check_account == True:
-    #             return render(request, 'Vendor/Home Profile/index.html')
-    #         else:
-    #             products = Product.objects.all().order_by('date')
-    #             categories = Category.objects.all().order_by('date')
-    #             context = {
-    #                 'products': products,
-    #                 'categories' : categories
-    #             }
-    #             return render(request, 'User/index.html', context)
-    # else:
-    #     products = Product.objects.all().order_by('date')
-    #     categories = Category.objects.all().order_by('date')
-    #     context = {
-    #         'products': products,
-    #         'categories' : categories
-    #     }
-    #     return render(request, 'User/index.html', context)
-    return render(request, 'index-3.html')
+    if request.user.is_authenticated:
+        if request.user.user_type == 1:
+            return render(request, 'Admin/Home Profile/index.html')
+        else:
+            check_account = request.session.get('vendor_account')
+            if check_account == True:
+                return render(request, 'Vendor/Home Profile/index.html')
+            else:
+                products = Product.objects.all().order_by('date')
+                categories = Category.objects.all().order_by('date')
+                context = {
+                    'products': products,
+                    'categories' : categories
+                }
+                return render(request, 'User/index.html', context)
+    else:
+        products = Product.objects.all().order_by('date')
+        categories = Category.objects.all().order_by('date')
+        context = {
+            'products': products,
+            'categories' : categories
+        }
+        return render(request, 'User/index.html', context)
 
 # Signup
 # Signup Page

@@ -91,6 +91,7 @@ DATABASES = {
         'NAME': 'FoodZone',
         'USER': 'prit',
         'PASSWORD': 'prit@2004',
+        'PORT': '5432',
     }
 }
 

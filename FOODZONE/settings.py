@@ -87,15 +87,10 @@ WSGI_APPLICATION = 'FOODZONE.wsgi.application'
 # postgresql database
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'food_zone',
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST': '127.0.0.1',
-        'PORT': '3306',
-        'OPTIONS': {
-            'sql_mode': 'STRICT_ALL_TABLES'
-        }
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'FoodZone',
+        'USER': 'prit',
+        'PASSWORD': 'prit@2004',
     }
 }
 

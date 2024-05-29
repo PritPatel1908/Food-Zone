@@ -34,7 +34,7 @@ def index(request):
     #         'categories' : categories
     #     }
     #     return render(request, 'User/index.html', context)
-    return render(request, 'file:///D:/new/Templates/Nest_v5.7_Unzip-First/nest-frontend/index-3.html')
+    return render(request, 'index-3.html')
 
 # Signup
 # Signup Page

@@ -12,13 +12,14 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 import os.path
-import dj_database_url
-from decouple import config
+# import dotenv
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
+# dotenv_file = os.path.join(BASE_DIR, ".env")
+# if os.path.isfile(dotenv_file):
+#     dotenv.load_dotenv(dotenv_file)
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
@@ -97,11 +98,12 @@ WSGI_APPLICATION = 'FOODZONE.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'FoodZone',
-        'USER': 'prit',
-        'PASSWORD': 'prit@2004',
-        'PORT': '5432',
+        'ENGINE': "django.db.backends.postgresql",
+        'HOST': "aws-0-ap-southeast-1.pooler.supabase.com",
+        'NAME': "postgres",
+        'USER': "postgres.tozhblneayaoxsuvphpl",
+        'PASSWORD': "49Yee!_*Y8dSux2",
+        'PORT': "5432",
     }
 }
 

@@ -1,0 +1,14 @@
+{
+    "builds": [
+      {
+        "src": "FOODZONE/wsgi.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "FOODZONE/wsgi.py"
+      }
+    ]
+}

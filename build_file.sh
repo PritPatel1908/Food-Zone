@@ -3,8 +3,8 @@
 # Collect static files
 python3 -m manage.py collectstatic
 
-# Create a tarball of the staticfiles_build directory
-tar -czf staticfiles_build.tar.gz staticfiles_build
+# Create a tarball of the media directory
+tar -czf media.tar.gz media
 
 # Upload the tarball to Vercel
-vercel deploy staticfiles_build.tar.gz
+vercel deploy media.tar.gz

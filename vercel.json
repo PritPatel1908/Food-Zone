@@ -2,11 +2,7 @@
     "builds": [
       {
         "src": "FOODZONE/wsgi.py",
-        "use": "@vercel/python",
-        "config": {
-            "buildCommand": "pip install -r requirements.txt && python manage.py collectstatic",
-            "outputDirectory": "staticfiles"
-        }
+        "use": "@vercel/python"
       }
     ],
     "routes": [

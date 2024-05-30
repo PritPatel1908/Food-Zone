@@ -1,14 +1,32 @@
 {
+    "version": 2,
     "builds": [
       {
         "src": "FOODZONE/wsgi.py",
         "use": "@vercel/python"
+      },
+      {
+        "src": "staticfiles/**/*",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "media/**/*",
+        "use": "@vercel/static"
       }
     ],
     "routes": [
+      {
+        "src": "/static/(.*)",
+        "dest": "/staticfiles/$1"
+      },
+      {
+        "src": "/media/(.*)",
+        "dest": "/media/$1"
+      },
       {
         "src": "/(.*)",
         "dest": "FOODZONE/wsgi.py"
       }
     ]
-}
+  }
+  

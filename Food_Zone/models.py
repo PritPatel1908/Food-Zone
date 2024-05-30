@@ -61,7 +61,7 @@ class Vendor_Account_Request(models.Model):
 class Vendor(models.Model):
     vendor_id = ShortUUIDField(unique=True, length=10, max_length=20, prefix='ven', alphabet='abcdefgh12345', primary_key=True)
     vendor_name = models.CharField(max_length=100, null=True, blank=True)
-    vendor_img = models.ImageField(upload_to='static/media/vendor_img', null=True)
+    vendor_img = models.ImageField(upload_to='media/vendor_img', null=True)
     vendor_cover_img = models.ImageField(upload_to='media/vendor_img', null=True)
     vendor_description = models.TextField(null=True, blank=True)
     vendor_address = models.CharField(max_length=150, null=True, blank=True)

@@ -3,7 +3,11 @@
     {
       "src": "FOODZONE/wsgi.py",
       "use": "@vercel/python",
-      "compression": "gzip"
+      "optimize": {
+        "enabled": true,
+        "compression": "gzip",
+        "maxSize": 230000000
+      }
     }
   ],
   "routes": [

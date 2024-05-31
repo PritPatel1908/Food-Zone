@@ -2,7 +2,8 @@
   "builds": [
     {
       "src": "FOODZONE/wsgi.py",
-      "use": "@vercel/python"
+      "use": "@vercel/python",
+      "compression": "gzip"
     }
   ],
   "routes": [

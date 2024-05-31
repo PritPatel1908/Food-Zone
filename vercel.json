@@ -5,7 +5,6 @@
       "use": "@vercel/python",
       "optimize": {
         "enabled": true,
-        "compression": "gzip",
         "maxSize": 230000000
       }
     }

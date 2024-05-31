@@ -3,9 +3,8 @@
     {
       "src": "FOODZONE/wsgi.py",
       "use": "@vercel/python",
-      "optimize": {
-        "enabled": true,
-        "maxSize": 230000000
+      "config": {
+        "maxLambdaSize": "15mb"
       }
     }
   ],

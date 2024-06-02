@@ -6,7 +6,8 @@
     },
     {
       "src": "static/Admin/assets/css/custome-css.css",
-      "use": "@vercel/static-build"
+      "use": "@vercel/static-build",
+      "config": {}
     }
   ],
   "routes": [

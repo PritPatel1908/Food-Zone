@@ -23,7 +23,7 @@
                 <div class="col-lg-9">
                     {% comment %} Basic profile detail {% endcomment %}
                     <section class="content-body p-xl-4" id="basic_profile_detail">
-                        <form id="basic_profile_detail_form" method="POST">
+                        <form id="basic_profile_detail_form" method="POST", enctype="multipart/form-data">
                             {% csrf_token %}
                             <div class="row" id="">
                                 <div class="col-lg-8">

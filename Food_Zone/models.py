@@ -18,7 +18,7 @@ class Users(AbstractUser):
         (2,'Users')
     )
     user_id = ShortUUIDField(unique=True, length=10, max_length=20, alphabet='abcdefgh12345', primary_key=True)
-    profile_pic = models.ImageField(upload_to='profile_pic',null=True)
+    profile_pic = models.ImageField(upload_to='media/profile_pic',null=True)
     phone = models.CharField(max_length=20,null=True, blank=True)
     gender = models.CharField(max_length=20,null=True, blank=True)
     dob = models.DateField(null=True, blank=True)

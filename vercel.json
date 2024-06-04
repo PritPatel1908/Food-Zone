@@ -1,0 +1,18 @@
+{
+  "builds": [
+    {
+      "src": "FOODZONE/wsgi.py",
+      "use": "@vercel/python"
+    },
+    {
+      "src": "build_files.sh",
+      "use": "@vercel/static-build"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "FOODZONE/wsgi.py"
+    }
+  ]
+}

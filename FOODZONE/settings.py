@@ -87,12 +87,23 @@ WSGI_APPLICATION = 'FOODZONE.wsgi.application'
 # }
 
 # postgresql database
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'FoodZone',
+#         'USER': 'prit',
+#         'PASSWORD': 'prit@2004',
+#     }
+# }
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'FoodZone',
         'USER': 'prit',
         'PASSWORD': 'prit@2004',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 

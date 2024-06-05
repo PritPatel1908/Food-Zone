@@ -96,16 +96,6 @@ WSGI_APPLICATION = 'FOODZONE.wsgi.application'
 #     }
 # }
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'FoodZone',
-        'USER': 'postgres',
-        'PASSWORD': 'prit@2004',
-        'HOST': 'localhost',
-        'PORT': '5432',
-    }
-}
 
 # DATABASES = {
 #     'default': {

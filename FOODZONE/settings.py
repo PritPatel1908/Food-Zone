@@ -100,7 +100,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'FoodZone',
-        'USER': 'prit',
+        'USER': 'postgres',
         'PASSWORD': 'prit@2004',
         'HOST': 'localhost',
         'PORT': '5432',

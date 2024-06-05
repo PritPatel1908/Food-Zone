@@ -102,7 +102,6 @@ DATABASES = {
         'NAME': 'FoodZone',
         'USER': 'postgres',
         'PASSWORD': 'prit@2004',
-        'HOST': 'localhost',
         'PORT': '5432',
     }
 }

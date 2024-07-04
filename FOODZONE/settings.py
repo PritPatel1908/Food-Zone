@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 import os.path
-import dotenv
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -86,27 +85,31 @@ WSGI_APPLICATION = 'FOODZONE.wsgi.application'
 #     }
 # }
 
-# postgresql database
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'FoodZone',
-#         'USER': 'prit',
-#         'PASSWORD': 'prit@2004',
-#     }
-# }
-
-
 DATABASES = {
     'default': {
-        'ENGINE': "django.db.backends.postgresql",
-        'HOST': "aws-0-ap-southeast-1.pooler.supabase.com",
-        'NAME': "postgres",
-        'USER': "postgres.tozhblneayaoxsuvphpl",
-        'PASSWORD': "49Yee!_*Y8dSux2",
-        'PORT': "5432",
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'FoodZone',
+        'USER': 'root',
+        'PASSWORD': '',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
+        'OPTIONS': {
+            'sql_mode': 'STRICT_ALL_TABLES'
+        }
     }
 }
+
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': "django.db.backends.postgresql",
+#         'HOST': "aws-0-ap-southeast-1.pooler.supabase.com",
+#         'NAME': "postgres",
+#         'USER': "postgres.tozhblneayaoxsuvphpl",
+#         'PASSWORD': "49Yee!_*Y8dSux2",
+#         'PORT': "5432",
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators

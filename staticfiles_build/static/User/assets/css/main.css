@@ -5416,6 +5416,7 @@ table .product-thumbnail img {
 
 .progress + .progress {
   margin-top: 1rem;
+  height: 15px;
 }
 
 .progress span {
